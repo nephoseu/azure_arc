@@ -10,6 +10,9 @@ param spnClientId string
 @secure()
 param spnClientSecret string
 
+@description('Tags to apply to deployed resources')
+param resourceTags object = {}
+
 @description('Azure AD tenant id for your service principal')
 param tenantId string = 'null'
 
